@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-color: rgb(219, 224, 228);
+}
+html {
+    scroll-behavior: smooth;
+}
+@media screen and (min-width: 992px) {
+    .card {width: 50%;}
+}
+@media screen and (min-width: 768px) {
+    .card {width: 100%;}
+}
+/* creates a solid box around kursplat games*/
+.header {
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-style: solid;
+    border: rgb(212, 212, 32);
+    background-color: #6e6e6e;
+    color: rgb(212, 212, 32);
+    padding-top: 50px;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+}
+
+/* this moves the tabs to the top right */
+.header div {
+    padding-top: 75px;
+    margin-right: -10px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    z-index: 1;
+    position: relative;
+}
+
+/* manipulates the interaction of the tabs*/
+.header a:link{
+    color: whitesmoke;
+}
+
+.header a:visited{
+    color:rgb(212, 212, 32);
+}
+
+.header a:hover{
+    color: rgb(176, 176, 176);
+}
+
+/* manipulates the entire header*/
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    padding-top: -10px;
+    z-index: 2;
+}
+
+/* manipulates the 'splat' in the header */
+.splat {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    z-index: 3;
+    position: relative;
+}
+
+.sploosh {
+    max-width: 120px;
+    max-height: 120px;
+    z-index: -3;
+    margin-left: -110px;
+    margin-bottom: -35px;
+    margin-top: 0px;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+
+.main-img img {
+  object-fit: scale-down;
+  object-fit: cover;
+  display: flex;
+  z-index: -2;
+  width: 100%;
+  
+}
+
+/*styling code for the About Me section*/
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.about-me1 {
+    background-color: grey;
+    border-radius: 25px;
+    width: 200px;
+    height: 250px;
+    border: 3px solid darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    text-align: center;
+    padding-top: 20px;
+}
+.about-me2 {
+    background-color: grey;
+    border-radius: 25px;
+    width: 82%;
+    height: 250px;
+    border: 3px solid darkgray;
+}
+
+p {
+    color: white;
+    padding: 12px;
+
+}
+.itMe {
+    object-fit: scale-down;
+    float: left;
+}
+
+/*style code for the games portion*/
+.Games {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.games1 {
+    background-color: grey;
+    border-radius: 25px;
+    width: 200px;
+    height: 250px;
+    border: 3px solid darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#gameh2 {
+    margin-top: -30px;
+}
+.games {
+    object-fit: scale-down;
+    align-content: center;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-top: -40px;
+}
+.games2 {
+    background-color: grey;
+    border-radius: 25px;
+    width: 82%;
+    height: 250px;
+    border: 3px solid darkgray;
+}
+.gallery {
+    position: relative;
+}
+.unrealStockPhotos {
+    display: none;
+}
+.cursor {
+    cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(212, 212, 32);
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+.demo:hover {
+  opacity: 1;
+}
+.contactMedia{
+    background-color: grey;
+    border-radius: 25px;
+    width: 80%;
+    height: 270px;
+    border: 3px solid darkgray;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 25%;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;
+} 
+a{
+    display: flex;
+    flex-direction: row;
+   
+}
+.container {
+    margin-top: 40px;
+}
+.fa {
+    padding: 20px;
+    font-size: 10px;
+    width: 100px;   
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 16px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+#contactMe {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 150px;
+} 
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(212, 212, 32);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(212, 212, 32);
+  }
+  
+  #contactMe {
+      margin-left: 150px;
+  }
+  .contactMeh {
+    border: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  footer {
+  border: rgb(212, 212, 32);
+  background-color: #6e6e6e;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center    ;
+  }
